@@ -28,7 +28,7 @@ public class Poker {
 			int[] p2=list.get(j).getv2();
 			int n1=Find(list.get(j).getv1(),list.get(j).gets1());
 			int n2=Find(list.get(j).getv2(),list.get(j).gets2());
-			System.out.println("next");
+			
 			if(n1>n2){
 				
 				
@@ -107,26 +107,26 @@ public class Poker {
 						}
 					}
 				}else if(n1==1){
-					//System.out.println("yes");
+					
 					if(p1[4]>p2[4]){
-						//System.out.println("yes1");
+						
 						
 						player1+=1;
 					}else if(p1[4]==p2[4]){
 						if(p1[3]>p2[3]){
-							//System.out.println("yes2");
+							
 							player1+=1;
 						}else if(p1[3]==p2[3]){
 							if(p1[2]>p2[2]){
-								//System.out.println("yes3");
+								
 								player1+=1;
 							}else if(p1[2]==p2[2]){
 								if(p1[1]>p2[1]){
-									//System.out.println("yes4");
+									
 									player1+=1;
 								}else if(p1[1]==p2[1]){
 									if(p1[0]>p2[0]){
-										//System.out.println("yes5");
+										
 									player1+=1;
 									
 								}
@@ -139,14 +139,7 @@ public class Poker {
 			
 			}
 			
-			if(player2!=player1){
-				
-				for(int it=0;it<5;it++){
-				System.out.println(p1[it]+"   "+p2[it]+"   "+list.get(j).gets1()[it]+"   "+list.get(j).gets2()[it]);
-				}
-				
-				player2++;
-		}
+			
 		
 		
 	}
